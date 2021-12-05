@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="logo header__logo">
+                    <img src="img/icons/logo.svg" alt="Logo">
+                </a>
+                <div class="header__overlay">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__elem">
+                                <a href="#" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__elem">
+                                <a href="#" class="nav__link">Products</a>
+                            </li>
+                            <li class="nav__elem">
+                                <a href="#" class="nav__link">About us</a>
+                            </li>
+                            <li class="nav__elem">
+                                <a href="#" class="nav__link">Prices</a>
+                            </li>
+                            <li class="nav__elem">
+                                <a href="#" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__block">
+                        <div class="header__favourite">
+                            <ul class="header__list">
+                                <li class="header__elem">
+                                    <a href="#" class="header__link">
+                                        <img src="img/icons/like.svg" alt="Liked">
+                                    </a>
+                                </li>
+                                <li class="header__elem">
+                                    <a href="#" class="header__link">
+                                        <img src="img/icons/buy.svg" alt="Shopping basket">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="header__login">Log in</a>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+            </div>
+        </div>    
+    </header>
+    <!-- End of header -->
+    <div class="pay-wrapper">
+        <!-- Student classroom -->
+        <div class="classroom">
+            <div class="classroom__background">
+                <div class="container">
+                    <div class="classroom__wrapper">
+                        <div class="classroom__info">
+                            <img src="img/icons/stud__classroom.svg" alt="Students" class="classroom__icon">
+                            <h2 class="classroom__title"> Student classroom</h2>
+                            <input type="number" class="classroom__input">
+                            <h2 class="classroom__cost">12.00$</h2>
+                            <span class="classroom__comment">Add student for 
+                                <a href="#" class="classroom__link">only $4.00</a>
+                            </span>
+                        </div>
+                        <ul class="classroom__list">
+                            <li class="classroom__elem">
+                                <p class="classroom__advantage">
+                                    Math, language arts, science, and social studies
+                                </p>
+                            </li>
+                            <li class="classroom__elem">
+                                <p class="classroom__advantage">
+                                    Report cards and analytics
+                                </p>
+                            </li>
+                            <li class="classroom__elem">
+                                <p class="classroom__advantage">
+                                    Unlimited number of practice
+                                </p>
+                            </li>
+                            <li class="classroom__elem">
+                                <p class="classroom__advantage">
+                                    Unlimited test preparation
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!-- End of classroom -->
+        <!-- Package -->
+        <div class="package">
+            <div class="container">
+                <div class="package__wrapper">
+                    <h3 class="package__title">Choose a package</h3>
+                    <ul class="package__list">
+                        <li class="package__elem">
+                            <label for="package-btn-01" class="package-btn">
+                                <input type="radio" id="package-btn-01" class="package-btn__input" name="package-btn">
+                                <div class="package-btn__wrapper">
+                                    <span class="package-btn__note">Core subjects</span>
+                                    <span class="package-btn__cost">$12.00</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="package__elem">
+                            <label for="package-btn-02" class="package-btn">
+                                <input type="radio" id="package-btn-02" class="package-btn__input" name="package-btn">
+                                <div class="package-btn__wrapper">
+                                    <span class="package-btn__note">Math only</span>
+                                    <span class="package-btn__cost">$8.00</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="package__elem">
+                            <label for="package-btn-03" class="package-btn">
+                                <input type="radio" id="package-btn-03" class="package-btn__input" name="package-btn">
+                                <div class="package-btn__wrapper">
+                                    <span class="package-btn__note">English only</span>
+                                    <span class="package-btn__cost">$6.00</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="package__elem">
+                            <label for="package-btn-04" class="package-btn">
+                                <input type="radio" id="package-btn-04" class="package-btn__input" name="package-btn">
+                                <div class="package-btn__wrapper">
+                                    <span class="package-btn__note">FREE combo</span>
+                                    <span class="package-btn__cost">$0.00</span>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                    <p class="package__comment">Your membership will be renewed automatically. You can cancel online anytime. Sales tax may apply.</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of package -->
+        <!-- Contact -->
+        <div class="contact">
+            <div class="container">
+                <div class="contact__wrapper">
+                    <h3 class="contact__title">Contact information</h3>
+                    <div class="contact-info">
+                        <div class="contact-info__elem">
+                            <span class="contact-info__helper"></span>
+                            <input type="text" class="contact-info__input" placeholder="Name">
+                        </div>
+                        <div class="contact-info__elem">
+                            <span class="contact-info__helper"></span>
+                            <input type="text" class="contact-info__input" placeholder="E-mail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of contact -->
+        <!-- Payment -->
+        <div class="payment">
+            <div class="container">
+                <div class="payment__wrapper">
+                    <h3 class="payment__title">Enter payment information</h3>
+                    <span class="payment__note">Card number</span>
+                    <div class="payment-card__wrapper">
+                        <span class="payment-card__note">123468Ad</span>
+                        <input type="text" class="payment-card__input payment-card__input--number">
+                        <span class="payment-card__note">Exp. date</span>
+                        <input type="text" class="payment-card__input payment-card__input--date">
+                        <span class="payment-card__note">CVC</span>
+                        <input type="text" class="payment-card__input payment-card__input--cvc">
+                    </div>
+                    <p class="payment__agreement">By clicking PractiThink, you acknowledge that you have read and agree to our
+                        <a href="#" class="payment__rules">Terms of Service</a>. You also <br>agree to allow PractiThink to store your card information for the purpose
+                        of automatically renewing your <br>membership and processing any future account upgrades. If
+                        we make any changes to how we use your stored <br>card information, we will inform you at the
+                        e-mail address on file.
+                    </p> 
+                    <div class="payment__block">
+                        <span class="payment__sum">Total: 12$</span>
+                        <a href="#" class="payment__link">Pay now</a> 
+                    </div>             
+                </div>
+            </div>
+        </div>
+        <!-- Advantages -->
+        <div class="advantages">
+            <div class="advantages__background">
+                <div class="container">
+                    <div class="advantages__wrapper">
+                        <h3 class="advantages__title"><b>PractiThink</b> benefits</h3>
+                        <ul class="advantages__list">
+                            <li class="advantages__elem">
+                                <p class="advantages__paragraph"><strong>3,500+</strong> Lessons & More - enjoy.</p>
+                            </li>
+                            <li class="advantages__elem">
+                                <p class="advantages__paragraph"><strong>24/7 access</strong> Lessons & More - enjoy to math, language arts, science, and social
+                                    studies, plus <br> bonus materials such as printable
+                                    worksheets, art activities, and more.</p>
+                            </li>
+                            <li class="advantages__elem">
+                                <p class="advantages__paragraph"><strong>14-Day Money Back Guarantee</strong> - if it is not a fit for
+                                    your family, cancel within 14 days and get your <br> money back.</p>
+                            </li>
+                            <li class="advantages__elem">
+                                <p class="advantages__paragraph"><strong>Start, Stop, or Pause Membership Anytime</strong> - change your status at anytime.</p>
+                            </li>
+                            <li class="advantages__elem">
+                                <p class="advantages__paragraph"><strong>Customer Support</strong> - ur team is exceptional.</p>
+                            </li>
+                            <li class="advantages__elem">
+                                <p class="advantages__paragraph"><strong>Automated Grading & Reporting</strong> - grading lessons and reporting done for you.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of advantages -->       
+    </div>
+    <!-- Styles -->
+    <script src="js/main.js"></script>      
+</body>
+</html>

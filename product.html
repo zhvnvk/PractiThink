@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="logo header__logo">
+                    <img src="img/icons/logo.svg" alt="Logo">
+                </a>
+                <div class="header__overlay">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__elem">
+                                <a href="#" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__elem">
+                                <a href="#" class="nav__link">Products</a>
+                            </li>
+                            <li class="nav__elem">
+                                <a href="#" class="nav__link">About us</a>
+                            </li>
+                            <li class="nav__elem">
+                                <a href="#" class="nav__link">Prices</a>
+                            </li>
+                            <li class="nav__elem">
+                                <a href="#" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__block">
+                        <div class="header__favourite">
+                            <ul class="header__list">
+                                <li class="header__elem">
+                                    <a href="#" class="header__link">
+                                        <img src="img/icons/like.svg" alt="Liked">
+                                    </a>
+                                </li>
+                                <li class="header__elem">
+                                    <a href="#" class="header__link">
+                                        <img src="img/icons/buy.svg" alt="Shopping basket">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="header__login">Log in</a>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+            </div>
+        </div>    
+    </header>
+    <!-- End of header -->
+    <div class="wrapper">
+        <div class="navigation">
+            <div class="container">
+                <div class="navigation__wrapper">
+                    <a href="#" class="navigation__back">Back to list</a>
+                    <h1 class="navigation__title">Kid's Book <span>Nastya’s Cat’s</span></h1>
+                </div>
+            </div>
+        </div>
+        <!-- Tabs -->
+        <div class="tabs">
+            <div class="container">
+                <div class="tabs__wrapper">
+                    <!-- Tabs list -->
+                    <ul class="tabs__list">
+                        <li class="tabs__item">
+                            <button class="tabs__btn">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.8441 17.0332L12.946 12.0234C14.0652 10.6641 14.6249 9.09961 14.6249 7.33008C14.6249 6.33398 14.4345 5.38477 14.0537 4.48242C13.6729 3.58008 13.1624 2.80078 12.522 2.14453C11.8816 1.48828 11.1172 0.966797 10.2287 0.580078C9.34024 0.193359 8.40562 0 7.42485 0C6.12101 0 4.91524 0.325195 3.80755 0.975586C2.69985 1.62598 1.82581 2.51367 1.18543 3.63867C0.545046 4.76367 0.224854 5.99121 0.224854 7.32129C0.224854 8.65137 0.545046 9.87891 1.18543 11.0039C1.82581 12.1289 2.69985 13.0166 3.80755 13.667C4.91524 14.3174 6.12101 14.6426 7.42485 14.6426C9.22485 14.6426 10.8056 14.0391 12.1672 12.832L17.0479 17.8242C17.0941 17.8711 17.1431 17.9092 17.195 17.9385C17.247 17.9678 17.3018 17.9854 17.3595 17.9912C17.4172 17.9971 17.4749 17.9971 17.5325 17.9912C17.5902 17.9854 17.645 17.9678 17.697 17.9385C17.7489 17.9092 17.7979 17.8711 17.8441 17.8242C17.9479 17.7188 17.9999 17.5869 17.9999 17.4287C17.9999 17.2705 17.9479 17.1387 17.8441 17.0332ZM7.42485 13.5C6.31716 13.5 5.29601 13.2217 4.36139 12.665C3.42678 12.1084 2.68831 11.3555 2.14601 10.4062C1.6037 9.45703 1.33255 8.42578 1.33255 7.3125C1.33255 6.19922 1.6037 5.16797 2.14601 4.21875C2.68831 3.26953 3.42678 2.5166 4.36139 1.95996C5.29601 1.40332 6.31428 1.125 7.4162 1.125C8.51812 1.125 9.53639 1.40332 10.471 1.95996C11.4056 2.5166 12.147 3.26953 12.695 4.21875C13.2431 5.16797 13.5172 6.19922 13.5172 7.3125C13.5172 8.96484 12.9518 10.3887 11.821 11.584C10.7018 12.7676 9.34024 13.4062 7.73639 13.5H7.42485ZM10.1941 6.75H7.9787V4.5C7.9787 4.34766 7.92389 4.21582 7.81428 4.10449C7.70466 3.99316 7.57197 3.9375 7.4162 3.9375C7.26043 3.9375 7.13062 3.99316 7.02678 4.10449C6.92293 4.21582 6.87101 4.34766 6.87101 4.5V6.75H4.65562C4.49408 6.75 4.36139 6.80566 4.25755 6.91699C4.1537 7.02832 4.10178 7.16016 4.10178 7.3125C4.10178 7.46484 4.1537 7.59668 4.25755 7.70801C4.36139 7.81934 4.49408 7.875 4.65562 7.875H6.87101V10.125C6.87101 10.2773 6.92293 10.4092 7.02678 10.5205C7.13062 10.6318 7.26043 10.6875 7.4162 10.6875C7.57197 10.6875 7.70466 10.6318 7.81428 10.5205C7.92389 10.4092 7.9787 10.2773 7.9787 10.125V7.875H10.1941C10.3441 7.875 10.4739 7.81934 10.5835 7.70801C10.6931 7.59668 10.7479 7.46484 10.7479 7.3125C10.7479 7.16016 10.6931 7.02832 10.5835 6.91699C10.4739 6.80566 10.3441 6.75 10.1941 6.75Z" fill="#68C2D0"/>
+                                </svg>
+                                <span>Item details</span> 
+                            </button>
+                        </li>
+                        <li class="tabs__item tabs__item--active">
+                            <button class="tabs__btn">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7828 17.9999C13.5427 17.9997 13.3082 17.9243 13.1092 17.7835L9.05704 14.9352C9.03707 14.9207 9.01339 14.913 8.98914 14.913C8.96488 14.913 8.9412 14.9207 8.92124 14.9352L4.86903 17.7835C4.66555 17.926 4.42555 18.0002 4.1809 17.9962C3.93625 17.9923 3.69854 17.9104 3.49932 17.7614C3.3001 17.6125 3.1488 17.4035 3.06552 17.1622C2.98224 16.9209 2.97091 16.6588 3.03304 16.4106L4.36386 11.4887C4.37015 11.464 4.36939 11.4378 4.36167 11.4135C4.35394 11.3892 4.3396 11.3678 4.32041 11.352L0.485476 8.19038C0.283592 8.03266 0.13384 7.81263 0.0572154 7.56114C-0.0194089 7.30966 -0.0190622 7.03933 0.0582068 6.78806C0.135476 6.53679 0.285792 6.31718 0.48808 6.16003C0.690367 6.00287 0.934481 5.91605 1.18619 5.91174L6.07491 5.71806C6.09895 5.71632 6.122 5.70732 6.14127 5.69216C6.16055 5.677 6.17523 5.65632 6.18355 5.63261L7.86745 0.830367C7.95232 0.586916 8.10649 0.376699 8.30906 0.228176C8.51163 0.0796536 8.75283 0 9 0C9.24717 0 9.48837 0.0796536 9.69094 0.228176C9.89351 0.376699 10.0477 0.586916 10.1326 0.830367L11.8164 5.63261C11.8248 5.65632 11.8395 5.677 11.8587 5.69216C11.878 5.70732 11.901 5.71632 11.9251 5.71806L16.8138 5.91174C17.0655 5.91605 17.3096 6.00287 17.5119 6.16003C17.7142 6.31718 17.8645 6.53679 17.9418 6.78806C18.0191 7.03933 18.0194 7.30966 17.9428 7.56114C17.8662 7.81263 17.7164 8.03266 17.5145 8.19038L13.6796 11.352C13.6598 11.3673 13.645 11.3887 13.6373 11.4132C13.6295 11.4376 13.6291 11.464 13.6361 11.4887L14.967 16.4106C15.0137 16.5994 15.0183 16.7969 14.9805 16.9879C14.9427 17.1788 14.8635 17.3581 14.749 17.5118C14.6345 17.6655 14.4877 17.7895 14.3202 17.8741C14.1527 17.9588 13.9688 18.0018 13.7828 17.9999ZM8.99185 13.7731C9.23239 13.7808 9.46517 13.8641 9.65998 14.0123L13.7122 16.8606C13.7327 16.877 13.7578 16.886 13.7835 16.8862C13.8093 16.8864 13.8345 16.8778 13.8553 16.8618C13.8761 16.8458 13.8913 16.8231 13.8988 16.7973C13.9063 16.7714 13.9056 16.7436 13.8969 16.7182L12.5661 11.7963C12.5006 11.5549 12.5054 11.2984 12.5799 11.0599C12.6545 10.8213 12.7953 10.6116 12.9843 10.4576L16.8192 7.29602C16.8402 7.28061 16.8558 7.25857 16.8639 7.23314C16.872 7.2077 16.8721 7.18022 16.8642 7.15472C16.8563 7.12923 16.8408 7.10706 16.82 7.09148C16.7992 7.07589 16.7742 7.06772 16.7486 7.06815L11.8599 6.87447C11.6205 6.86468 11.3894 6.78035 11.1959 6.63222C11.0024 6.48409 10.8553 6.27888 10.7735 6.04276L9.08963 1.24052C9.08203 1.21502 9.06687 1.19274 9.04635 1.17691C9.02583 1.16109 9.00103 1.15255 8.97556 1.15255C8.95009 1.15255 8.92528 1.16109 8.90476 1.17691C8.88424 1.19274 8.86908 1.21502 8.86149 1.24052L7.19389 6.03707C7.11206 6.27318 6.96503 6.47839 6.77154 6.62652C6.57805 6.77465 6.34688 6.85898 6.10751 6.86877L1.21878 7.06246C1.19322 7.06202 1.1682 7.0702 1.1474 7.08578C1.1266 7.10136 1.11111 7.12353 1.10321 7.14903C1.0953 7.17452 1.09541 7.20201 1.1035 7.22744C1.11159 7.25287 1.12725 7.27491 1.14817 7.29032L4.98853 10.4576C5.17699 10.6121 5.31738 10.8219 5.39186 11.0603C5.46633 11.2986 5.47153 11.5549 5.40679 11.7963L4.0814 16.7182C4.07349 16.7428 4.07345 16.7695 4.0813 16.7942C4.08914 16.8189 4.10443 16.8402 4.12486 16.8549C4.14454 16.8726 4.16958 16.8823 4.19547 16.8823C4.22137 16.8823 4.24641 16.8726 4.26609 16.8549L8.31829 14.0066C8.51633 13.8689 8.74877 13.7955 8.98642 13.7958L8.99185 13.7731Z" fill="#68C2D0"/>
+                                </svg>
+                                <span>Reviews</span> 
+                            </button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__btn">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.64286 12.495L4.85714 11.2807V13.005L3.46071 14.3893L2.42857 13.9643V10.9286H0.607143L0 10.3214V0.607143L0.607143 0H15.1786L15.7857 0.607143V6.07143H14.5714V1.21429H1.21429V9.71429H3.03571L3.64286 10.3214V12.495ZM11.2807 14.5714L13.5393 16.8179L14.5714 16.3929V14.5714H16.3929L17 13.9643V7.89286L16.3929 7.28571H6.67857L6.07143 7.89286V13.9643L6.67857 14.5714H11.2807ZM11.5357 13.3571H7.28571V8.5H15.7857V13.3571H13.9643L13.3571 13.9643V14.9236L11.9607 13.5393L11.5357 13.3571Z" fill="#68C2D0"/>
+                                </svg>
+                                <span>Comments</span> 
+                            </button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__btn">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 16.875C11.0886 16.875 13.0916 16.0453 14.5685 14.5685C16.0453 13.0916 16.875 11.0886 16.875 9C16.875 6.91142 16.0453 4.90838 14.5685 3.43153C13.0916 1.95468 11.0886 1.125 9 1.125C6.91142 1.125 4.90838 1.95468 3.43153 3.43153C1.95468 4.90838 1.125 6.91142 1.125 9C1.125 11.0886 1.95468 13.0916 3.43153 14.5685C4.90838 16.0453 6.91142 16.875 9 16.875ZM9 18C11.3869 18 13.6761 17.0518 15.364 15.364C17.0518 13.6761 18 11.3869 18 9C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948212 11.3869 0 9 0C6.61305 0 4.32387 0.948212 2.63604 2.63604C0.948212 4.32387 0 6.61305 0 9C0 11.3869 0.948212 13.6761 2.63604 15.364C4.32387 17.0518 6.61305 18 9 18Z" fill="#68C2D0"/>
+                                    <path d="M5.90625 6.78713H7.39125C7.39125 5.9085 7.9065 5.23013 8.92125 5.23013C9.69187 5.23013 10.3984 5.616 10.3984 6.54412C10.3984 7.2585 9.97762 7.587 9.31275 8.0865C8.55562 8.63663 7.956 9.279 7.99875 10.3219L8.00663 10.8427H9.477V10.4434C9.477 9.63562 9.78413 9.4005 10.6132 8.77163C11.2984 8.25075 12.0128 7.6725 12.0128 6.45863C12.0128 4.75875 10.5773 3.9375 9.00563 3.9375C7.51388 3.9375 5.87137 4.66537 5.90737 6.78713H5.90625ZM7.6635 12.9926C7.6635 13.5922 8.14163 14.0355 8.79975 14.0355C9.48487 14.0355 9.95625 13.5922 9.95625 12.9926C9.95625 12.3716 9.48375 11.9351 8.79862 11.9351C8.14163 11.9351 7.6635 12.3716 7.6635 12.9926Z" fill="#68C2D0"/>
+                                </svg>
+                                <span>Support</span> 
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- End of tabs list -->
+                </div>
+                <div class="tabs__content">
+                    <div class="commodity">
+                        <div class="commodity__left">
+                            <!-- Product -->
+                            <div class="product">
+                                <div class="product__wrapper">
+                                    <div class="product__header">
+                                        <div class="product__image">
+                                            <img src="img/pictures/book.png" alt="Book">
+                                        </div>
+                                        <div class="product__info">
+                                            <div class="product__elem">
+                                                <span class="product__property">Subject</span>
+                                                <span class="product__feature">Math</span>
+                                            </div>
+                                            <div class="product__elem">
+                                                <span class="product__property">Grade Levels</span>
+                                                <span class="product__feature">4th, 5th, 6th</span>
+                                            </div>
+                                            <div class="product__elem">
+                                                <span class="product__property">Resource Type</span>
+                                                <span class="product__feature">Math Center, Activities</span>
+                                            </div>
+                                            <div class="product__elem">
+                                                <span class="product__property">File Type</span>
+                                                <span class="product__feature">PDF (32 MB) 16 pages</span>
+                                            </div>
+                                            <div class="product__rate">
+                                                <span class="product__mark">4.1(<a href="#">34</a>)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product__description">
+                                        <h3 class="product__title">Item description</h3>
+                                        <p class="product__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, optio minima provident similique voluptates iure eveniet temporibus fugiat asperiores nihil ea et, magnam nostrum error? Doloribus veniam amet minus sit, ad similique autem totam ipsam. 
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, optio minima provident similique voluptates iure eveniet temporibus fugiat asperiores nihil ea et, magnam nostrum error? Doloribus veniam amet minus sit, ad similique autem totam ipsam.
+                                        </p>
+                                    </div>
+                                    <div class="product__feedback">
+                                        <h3 class="product__title">What people say about author</h3>
+                                        <div class="product__comments">
+                                            <span class="product__author">Author: <span>PractiThink</span></span>
+                                            <div class="product__note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, optio minima provident similique voluptates iure eveniet temporibus fugiat asperiores nihil ea et, magnam nostrum error?</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of product -->
+                            <!-- Recomendations -->
+                            <div class="recomendations">
+                                <div class="recomendations__wrapper">
+                                    <h3 class="recomendations__title">You also may like</h3>
+                                    <div class="recomendations__offers">
+                                        <div class="recomendations__elem">
+                                            <div class="recomendations__picture">
+                                                <img src="img/pictures/book.png" alt="Book">
+                                            </div>
+                                            <div class="recomendations__body">
+                                                <span class="recomendations__description">Lorem ipsum dolor sit amet.</span>
+                                                <span class="recomendations__author">Author: <span>PractiThink</span></span>
+                                            </div>
+                                            <div class="recomendations__footer">
+                                                <span class="recomendation__rate">Grade 4</span>
+                                                <span class="recomendations__cost">$20</span>
+                                            </div>
+                                        </div>
+                                        <div class="recomendations__elem">
+                                            <div class="recomendations__picture">
+                                                <img src="img/pictures/book.png" alt="Book">
+                                            </div>
+                                            <div class="recomendations__body">
+                                                <span class="recomendations__description">Lorem ipsum dolor sit amet.</span>
+                                                <span class="recomendations__author">Author: <span>PractiThink</span></span>
+                                            </div>
+                                            <div class="recomendations__footer">
+                                                <span class="recomendation__rate">Grade 4</span>
+                                                <span class="recomendations__cost">$20</span>
+                                            </div>
+                                        </div>
+                                        <div class="recomendations__elem">
+                                            <div class="recomendations__picture">
+                                                <img src="img/pictures/book.png" alt="Book"> 
+                                            </div>
+                                            <div class="recomendations__body">
+                                                <span class="recomendations__description">Lorem ipsum dolor sit amet.</span>
+                                                <span class="recomendations__author">Author: <span>PractiThink</span></span>
+                                            </div>
+                                            <div class="recomendations__footer">
+                                                <span class="recomendation__rate">Grade 4</span>
+                                                <span class="recomendations__cost">$20</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of recomendations -->
+                        </div>
+                        <div class="commodity__right">
+                            <!-- Parameters -->
+                            <div class="parameters">
+                                <div class="cost">
+                                    <h2 class="cost__price">$2.99</h2>
+                                    <button class="cost__button">Buy Now</button>
+                                    <a href="#" class="cost__link">Add to wish list</a>
+                                </div>
+                                <div class="parameters__wrapper">
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Ages</h3>
+                                        <ul class="parameters__settings">
+                                            <li class="parameters__item">
+                                                <span class="parameters__age">2-3 y.o.</span>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <span class="parameters__age">4-5 y.o.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Special values</h3>
+                                        <ul class="parameters__menu">
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Young Reader Paperbacks
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Board Books: Buy One
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Kids' Book Value Offer
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    PT Collectible Editions
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    PT Exclusives
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Top collections</h3>
+                                        <ul class="parameters__menu">
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of parameters -->
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content tabs__content--active">
+                    <div class="commodity">
+                        <div class="commodity__left">
+                            <!-- Feedback -->
+                            <div class="feedback">
+                                <div class="feedback__header">
+                                    <span class="feedback__count">4 Reviews</span>
+                                    <a href="#" class="main-btn feedback__main-btn">Add Review</a>
+                                </div>
+                                <div class="feedback__body">
+                                    <div class="feedback__elem">
+                                        <span class="feedback__name">Ivan Ivanov</span>
+                                        <span class="feedback__date">12.12.2012</span>
+                                        <img src="img/icons/stars_group.svg" alt="Stars" class="feedback__rate">
+                                        <p class="feedback__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, optio minima provident similique voluptates iure eveniet temporibus fugiat asperiores nihil ea et, magnam nostrum error? Doloribus veniam amet minus sit, ad similique autem totam ipsam. </p>
+                                    </div>
+                                    <div class="feedback__elem">
+                                        <span class="feedback__name">Ivan Ivanov</span>
+                                        <span class="feedback__date">12.12.2012</span>
+                                        <img src="img/icons/stars_group.svg" alt="Stars" class="feedback__rate">
+                                        <p class="feedback__paragraph">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="feedback__elem">
+                                        <span class="feedback__name">Ivan Ivanov</span>
+                                        <span class="feedback__date">12.12.2012</span>
+                                        <img src="img/icons/stars_group.svg" alt="Stars" class="feedback__rate">
+                                        <p class="feedback__paragraph"></p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- End of feedback -->
+                        </div>
+                        <div class="commodity__right">
+                            <!-- Parameters -->
+                            <div class="parameters">
+                                <div class="cost">
+                                    <h2 class="cost__price">$2.99</h2>
+                                    <button class="cost__button">Buy Now</button>
+                                    <a href="#" class="cost__link">Add to wish list</a>
+                                </div>
+                                <div class="parameters__wrapper">
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Ages</h3>
+                                        <ul class="parameters__settings">
+                                            <li class="parameters__item">
+                                                <span class="parameters__age">2-3 y.o.</span>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <span class="parameters__age">4-5 y.o.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Special values</h3>
+                                        <ul class="parameters__menu">
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Young Reader Paperbacks
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Board Books: Buy One
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Kids' Book Value Offer
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    PT Collectible Editions
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    PT Exclusives
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Top collections</h3>
+                                        <ul class="parameters__menu">
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of parameters -->
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content">
+                    <div class="commodity">
+                        <div class="commodity__left">
+                            <div class="comments-tabs">
+                                <ul class="comments-tabs__list">
+                                        <li class="comments-tabs__item comments-tabs__item--active">
+                                            <button class="comments-tabs__btn comments-tabs__btn--count">2 Comments</button>
+                                        </li>
+                                        <li class="comments-tabs__item">
+                                            <button class="comments-tabs__btn comments-tabs__btn--add">Add Comments</button>
+                                        </li>
+                                </ul>
+                                <div class="comments-tabs__content comments-tabs__content--active">   
+                                    <!-- Feedback -->
+                                    <div class="feedback">
+                                        <div class="feedback__body">
+                                            <div class="feedback__elem">
+                                                <span class="feedback__name">Ivan Ivanov</span>
+                                                <span class="feedback__date">12.12.2012</span>
+                                                <img src="img/icons/stars_group.svg" alt="Stars" class="feedback__rate">
+                                                <p class="feedback__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, optio minima provident similique voluptates iure eveniet temporibus fugiat asperiores nihil ea et, magnam nostrum error? Doloribus veniam amet minus sit, ad similique autem totam ipsam. </p>
+                                            </div>
+                                            <div class="feedback__elem">
+                                                <span class="feedback__name">Ivan Ivanov</span>
+                                                <span class="feedback__date">12.12.2012</span>
+                                                <img src="img/icons/stars_group.svg" alt="Stars" class="feedback__rate">
+                                                <p class="feedback__paragraph">Lorem ipsum dolor</p>
+                                            </div>
+                                            <div class="feedback__elem">
+                                                <span class="feedback__name">Ivan Ivanov</span>
+                                                <span class="feedback__date">12.12.2012</span>
+                                                <img src="img/icons/stars_group.svg" alt="Stars" class="feedback__rate">
+                                                <p class="feedback__paragraph"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of feedback -->
+                                </div>     
+                                <div class="comments-tabs__content">
+                                    <!-- Add-comments -->
+                                    <div class="add-comments">
+                                        <div class="add-comments__wrapper">
+                                            <div class="add-comments__header">
+                                                <input type="text" class="add-comments__input" placeholder="Name">
+                                                <input type="text" class="add-comments__input" placeholder="E-mail">
+                                            </div>
+                                            <textarea name="" id="" cols="30" rows="5" class="add-comments__textarea" placeholder="Add comment"></textarea>
+                                            <a href="#" class="main-btn add-comments__main-btn">Add Review</a>
+                                        </div>
+                                    </div>
+                                    <!-- End of add-comments -->
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="commodity__right">
+                            <!-- Parameters -->
+                            <div class="parameters">
+                                <div class="cost">
+                                    <h2 class="cost__price">$2.99</h2>
+                                    <button class="cost__button">Buy Now</button>
+                                    <a href="#" class="cost__link">Add to wish list</a>
+                                </div>
+                                <div class="parameters__wrapper">
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Ages</h3>
+                                        <ul class="parameters__settings">
+                                            <li class="parameters__item">
+                                                <span class="parameters__age">2-3 y.o.</span>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <span class="parameters__age">4-5 y.o.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Special values</h3>
+                                        <ul class="parameters__menu">
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Young Reader Paperbacks
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Board Books: Buy One
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Kids' Book Value Offer
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    PT Collectible Editions
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    PT Exclusives
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Top collections</h3>
+                                        <ul class="parameters__menu">
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of parameters -->
+                        </div>
+                    </div>
+                </div>    
+                <div class="tabs__content">
+                    <div class="commodity">
+                        <div class="commodity__left">
+                            <!-- Questions -->
+                            <div class="questions">
+                                <div class="questions__wrapper">
+                                    <h2 class="questions__title">Frequently Asked Questions</h2>
+                                    <ul class="questions__list">
+                                        <li class="questions__elem">
+                                            <input type="text" class="questions__input" placeholder="Lorem ipsum?">
+                                        </li>
+                                        <li class="questions__elem">
+                                            <input type="text" class="questions__input" placeholder="Lorem ipsum?">
+                                        </li>
+                                        <li class="questions__elem">
+                                            <input type="text" class="questions__input" placeholder="Lorem ipsum?">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End of questions -->
+                            <!-- Asking -->
+                            <div class="asking">
+                                <div class="asking__wrapper">
+                                    <h2 class="asking__title">Ask a Question</h2>
+                                    <form action="#" class="asking-form">
+                                        <div class="asking-form__wrapper">
+                                            <input type="text" class="asking__input" placeholder="Name">
+                                            <input type="text" class="asking__input" placeholder="E-mail">
+                                            <textarea class="asking__textarea" placeholder="Question"></textarea>
+                                        </div>
+                                        <button class="main-btn asking__main-btn">Ask</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- End of asking -->
+                        </div>
+                        <div class="commodity__right">
+                            <!-- Parameters -->
+                            <div class="parameters">
+                                <div class="cost">
+                                    <h2 class="cost__price">$2.99</h2>
+                                    <button class="cost__button">Buy Now</button>
+                                    <a href="#" class="cost__link">Add to wish list</a>
+                                </div>
+                                <div class="parameters__wrapper">
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Ages</h3>
+                                        <ul class="parameters__settings">
+                                            <li class="parameters__item">
+                                                <span class="parameters__age">2-3 y.o.</span>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <span class="parameters__age">4-5 y.o.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Special values</h3>
+                                        <ul class="parameters__menu">
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Young Reader Paperbacks
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Board Books: Buy One
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Kids' Book Value Offer
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    PT Collectible Editions
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    PT Exclusives
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="parameters__elem">
+                                        <h3 class="parameters__title">Top collections</h3>
+                                        <ul class="parameters__menu">
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Warriors by Erin Hunter
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Peppa Pig
+                                                </a>
+                                            </li>
+                                            <li class="parameters__chapter">
+                                                <a href="#" class="parameters__link">
+                                                    Rick Riordan
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of parameters -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of tabs -->
+    </div>
+    <!-- Styles -->
+    <script src="js/main.js"></script>    
+</body>
+</html>
